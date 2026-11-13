@@ -1,26 +1,26 @@
 {
   "name": "哔哩轻小说",
   "url": "www.bilinovel.com",
-  "version": 100,
+  "version": 101,
   "search": {
-    "url": "https://www.bilinovel.com/search.html?searchkey=${key}",
+    "url": "https://www.bilinovel.com/search.html?searchkey=${key}&searchtype=all",
     "charset": "utf-8",
-    "list": ".book-ol .book-li",
-    "name": ".book-title",
+    "list": ".book-ol.book-ol-normal li",
+    "name": ".book-title-x .book-title",
     "author": ".book-author",
     "cover": "img@data-src",
-    "detail": "a",
+    "detail": ".book-title-x a",
     "summary": ".book-desc"
   },
   "detail": {
-    "name": ".book-layout h1",
-    "author": ".book-rand-a",
+    "name": "meta[property='og:novel:book_name']@content",
+    "author": "meta[property='og:novel:author']@content",
     "summary": "#bookSummary",
-    "cover": ".module-item-cover img",
+    "cover": "meta[property='og:image']@content",
     "catalog": ".btn-normal.red"
   },
   "catalog": {
-    "list": ".catalog-volume .chapter-li",
+    "list": "#catelogX .chapter-li",
     "orderBy": 0,
     "name": "a",
     "chapter": "a"
