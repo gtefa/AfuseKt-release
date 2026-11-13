@@ -1,7 +1,7 @@
 {
   "name": "哔哩轻小说",
   "url": "www.bilinovel.com",
-  "version": 101,
+  "version": 102,
   "search": {
     "url": "https://www.bilinovel.com/search.html?searchkey=${key}&searchtype=all",
     "charset": "utf-8",
@@ -27,5 +27,9 @@
   },
   "chapter": {
     "content": "#acontent"
+  },
+  "auth": {
+    "login": "https://www.bilinovel.com/search.html?searchkey=OVERLORD&searchtype=all",
+    "cookie": "https://www.bilinovel.com"
   }
 }
